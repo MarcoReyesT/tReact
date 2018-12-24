@@ -26,10 +26,10 @@ export default class Item extends React.Component {
   render() {
     //let text = this.state.checked ? <strike>{this.props.title}</strike> : this.props.icon;
     return(
-      <View style={styles}>
+      <View>
         <CheckBox checked={this.states.checked} onPress={this.handleClick.bind(this)} color="#44f"/>
         <Body>
-          <Text>&nbsp;&nbsp;&nbsp;{this.props.title}</Text>
+          <Text style={{ alignItems: 'flex-start' }}>{this.props.texto}</Text>
         </Body>
       </View>
     );
